@@ -7,8 +7,8 @@ class Calculator {
         return number1 - number2;
     }
 
-    multiply() {
-        // TODO: needs implementation
+    multiply(number1, number2) {
+        return number1 * number2;
     }
 
     divide() {
