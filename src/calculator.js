@@ -3,8 +3,8 @@ class Calculator {
         return number1 + number2;
     }
 
-    subtract() {
-        // TODO: needs implementation
+    subtract(number1, number2) {
+        return number1 - number2;
     }
 
     multiply() {
