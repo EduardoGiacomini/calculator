@@ -11,8 +11,11 @@ class Calculator {
         return number1 * number2;
     }
 
-    divide() {
-        // TODO: needs implementation
+    divide(number1, number2) {
+        if (number2 === 0) {
+            throw new Error('It is impossible to divide by zero');
+        }
+        return number1 / number2;
     }
 }
 
