@@ -13,9 +13,22 @@ class Calculator {
 
     divide(number1, number2) {
         if (number2 === 0) {
-            throw new Error('It is impossible to divide by zero');
+            throw new Error('Não é possível realizar divisão por zero');
         }
+
         return number1 / number2;
+    }
+
+    factorial(number) {
+        if (number < 0) {
+            throw new Error('O fatorial é definido apenas para o conjunto dos números naturais');
+        }
+
+        if (number === 0) {
+            return 1;
+        }
+
+        return number * this.factorial(number - 1);
     }
 }
 
